@@ -76,7 +76,7 @@ void pmm_parse_memory_map(multiboot_memory_map_entry *mmap_addr, uint32_t length
         tty_printf("\nUnknown. Using normal mode.\n");
         os_mode = 1;
     }
-    tty_setcolor(VESA_LIGHT_CYAN);
+    tty_setcolor(VESA_LIGHT_GREEN);
 }
 
 int pmm_find_free_block() {

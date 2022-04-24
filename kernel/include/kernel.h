@@ -35,9 +35,9 @@
 #define VERSION_MINOR   2   // Пре-релиз 
 #define VERSION_PATCH   6   // Патч
 
-#define isDistr         0   // 0 - не дистрибутив, 1 - дистрибутив
-#define DistrName       ""  // Имя дистрибутива
-#define dVERSION_MAJOR  0   // Версия дистрибутива
+#define isDistr         1   // 0 - не дистрибутив, 1 - дистрибутив
+#define DistrName       "Easter Agg"  // Имя дистрибутива
+#define dVERSION_MAJOR  1   // Версия дистрибутива
 #define dVERSION_MINOR  0   // Пре-релиз дистрибутива
 #define dVERSION_PATCH  0   // Патч дистрибутива
 

@@ -23,7 +23,7 @@ void kernel(int magic_number, struct multiboot_info *mboot_info) {
     if (isDistr) {
         //Вывод информации о дистрибутиве
         tty_printf("\tDistribution \"%s\", version %d.%d.%d",
-            dVERSION_MAJOR, dVERSION_MINOR, dVERSION_PATCH
+            DistrName, dVERSION_MAJOR, dVERSION_MINOR, dVERSION_PATCH
             );
     }
 
@@ -46,11 +46,12 @@ void kernel(int magic_number, struct multiboot_info *mboot_info) {
     vfs_init();                             // Инициализация виртуальной файловой системы
 
     initrd_init(initrd_beg, initrd_end);    // Инициализация ramdisk
-    floppy_init();                         // Инициализация драйвера гибких дисков
+    //floppy_init();                         // Инициализация драйвера гибких дисков
 
     syscall_init();                         // Инициализация системного api для программ
 
     keyboard_install();                     // Установка драйвера клавиатуры
-    run_elf_file("/initrd/apps/test.elf");
+    //run_elf_file("/initrd/apps/test.elf");
+    run_elf_file("/initrd/apps/picture.elf");
     ksh_main();                             // Активация терминала
 }

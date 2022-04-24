@@ -7,11 +7,11 @@ void ksh_main() {
     while (1) {
         
 
-        tty_setcolor(VESA_LIGHT_CYAN);
+        tty_setcolor(VESA_LIGHT_BROWN);
         tty_printf("\nROOT ");
-        tty_setcolor(VESA_LIGHT_GREEN);
+        tty_setcolor(VESA_LIGHT_BLUE);
         tty_printf("%s>", current_dir);
-        tty_setcolor(VESA_LIGHT_GREY);
+        tty_setcolor(VESA_LIGHT_GREEN);
 
         char *cmd = keyboard_gets();
 
