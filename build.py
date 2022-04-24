@@ -61,7 +61,7 @@ if __name__ == "__main__":
         else:
             os.system("qemu-img create fdb.img 1.44M")
 
-        os.chdir("apps/")
+        os.chdir("apps_/")
         os.system("python build.py")
 
         shutil.rmtree("../initrd/apps", ignore_errors=True)
