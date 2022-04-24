@@ -7,7 +7,7 @@ void ksh_main() {
     while (1) {
         
 
-        tty_setcolor(VESA_LIGHT_BROWN);
+        tty_setcolor(VESA_LIGHT_YELLOW);
         tty_printf("\nROOT ");
         tty_setcolor(VESA_LIGHT_BLUE);
         tty_printf("%s>", current_dir);

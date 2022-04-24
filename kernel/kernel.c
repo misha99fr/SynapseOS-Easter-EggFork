@@ -22,7 +22,7 @@ void kernel(int magic_number, struct multiboot_info *mboot_info) {
     // Проверка, является ли сборка дистрибутивом
     if (isDistr) {
         //Вывод информации о дистрибутиве
-        tty_printf("\tDistribution \"%s\", version %d.%d.%d",
+        tty_printf("\n\tDistribution \"%s\", version %d.%d.%d\n",
             DistrName, dVERSION_MAJOR, dVERSION_MINOR, dVERSION_PATCH
             );
     }
